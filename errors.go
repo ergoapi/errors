@@ -54,3 +54,10 @@ func Boka(value string, v interface{}) {
 	}
 	Bomb(value)
 }
+
+// CheckAndExit check & exit
+func CheckAndExit(err error) {
+	if err != nil {
+		panic(err)
+	}
+}
